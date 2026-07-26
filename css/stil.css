@@ -240,6 +240,8 @@ body::after{
 }
 .hero__inhalt{ position:relative; z-index:2; width:100%; }
 .hero__titel{ font-size:clamp(2.4rem, 6.2vw, 5.2rem); max-width:16ch; }
+/* Im Hero steht die zweite Zeile aufrecht wie die erste — nur die Farbe unterscheidet sie. */
+.hero__titel em{ font-style:normal; }
 .hero__lead{ margin-top:1.5rem; max-width:46ch; font-size:clamp(1.02rem,1.5vw,1.2rem); }
 .hero__knoepfe{ display:flex; flex-wrap:wrap; gap:.8rem; margin-top:2.2rem; }
 
