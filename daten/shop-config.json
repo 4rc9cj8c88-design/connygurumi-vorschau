@@ -2,7 +2,7 @@
   "_hinweis": "Zentrale Einstellungen. Wird von der Website UND (spaeter) von der Checkout-Funktion gelesen. Nach jeder Aenderung Seite neu laden.",
   "checkout": "anfrage",
   "_checkout_erklaerung": "\"anfrage\" = Bestellung kommt per E-Mail, Bezahlung wird danach persoenlich geklaert. \"stripe\" = echter Bezahlvorgang. Erst auf \"stripe\" umstellen, wenn Gewerbe, AGB, Widerrufsbelehrung und Stripe-Konto stehen.",
-  "shopName": "Connygurumi",
+  "shopName": "Handmade by CB",
   "inhaberin": "Cornelia Brüll",
   "strasse": "[STRASSE — vor Livegang eintragen]",
   "plz": "[PLZ]",

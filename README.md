@@ -1,4 +1,4 @@
-# Connygurumi — Handgemachtes aus Aidlingen
+# Handmade by CB — Handgemachtes aus Aidlingen
 
 Statische Website mit Warenkorb. Kein Framework, kein Build-Schritt: HTML, CSS und
 JavaScript liegen so auf dem Server, wie sie hier im Ordner stehen.

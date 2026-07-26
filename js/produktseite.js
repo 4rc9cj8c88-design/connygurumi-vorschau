@@ -16,14 +16,14 @@
   });
 
   function nichtGefunden() {
-    document.title = "Nicht gefunden — Connygurumi";
+    document.title = "Nicht gefunden — Handmade by CB";
     wurzel.innerHTML =
       '<div class="leer"><p>Dieses Stück gibt es nicht mehr.</p>' +
       '<p style="margin-top:1rem"><a class="knopf knopf--linie" href="shop.html">Alle Arbeiten ansehen</a></p></div>';
   }
 
   function zeichne(p, daten) {
-    document.title = p.titel + " — Connygurumi";
+    document.title = p.titel + " — Handmade by CB";
     var beschreibung = document.querySelector('meta[name="description"]');
     if (beschreibung) beschreibung.setAttribute("content", p.kurztext);
 
