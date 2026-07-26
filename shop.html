@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alle Arbeiten — Connygurumi</title>
+<meta name="description" content="Alle verfügbaren Häkelarbeiten, gravierten Holzstücke und Basteleien aus der Werkstatt in Aidlingen.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preload" as="font" type="font/woff2" href="fonts/newsreader-var-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/karla-var-latin.woff2" crossorigin>
+<link rel="stylesheet" href="css/stil.css">
+<script src="js/js-flag.js"></script>
+</head>
+<body>
+
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+
+<header class="kopf">
+  <a class="wortmarke" href="index.html">Connygurumi<span>.</span></a>
+  <nav class="nav" id="nav">
+    <a href="index.html">Startseite</a>
+    <a href="shop.html">Arbeiten</a>
+    <a href="ueber.html">Über mich</a>
+    <a href="wunsch.html">Wunschanfertigung</a>
+  </nav>
+  <div class="kopf__rechts">
+    <button type="button" class="korb-knopf nur-mit-js" id="warenkorb-oeffnen">
+      Warenkorb <span class="korb-knopf__zahl" id="warenkorb-anzahl" hidden>0</span>
+    </button>
+    <a class="korb-knopf ohne-js" href="warenkorb.html">Warenkorb</a>
+    <button type="button" class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menü öffnen">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="inhalt" class="hauptteil">
+  <section class="abschnitt" style="padding-top:clamp(7rem,12vw,10rem)">
+    <div class="bahn">
+      <p class="marke zeig">Werkstatt Aidlingen</p>
+      <h1 class="titel-gross zeig" data-versatz="80" data-faden>Alles, was gerade <em>fertig</em> ist.</h1>
+      <p class="zeig gedaempft lese" data-versatz="140" style="margin-top:1rem">Einzelstücke sind mit „Einzelstück“ gekennzeichnet — die gibt es nur einmal. Verkauftes lasse ich stehen, damit du siehst, was möglich ist.</p>
+
+      <div class="filter" data-filterleiste style="margin-top:clamp(2rem,4vw,3rem)"></div>
+
+      <div class="raster" data-liste="alle">
+        <noscript><p class="gedaempft">Für die Produktübersicht bitte JavaScript aktivieren — oder <a class="textlink" href="wunsch.html">schreib mir einfach</a>.</p></noscript>
+      </div>
+    </div>
+  </section>
+
+  <section class="abschnitt abschnitt--eng band">
+    <div class="bahn band__inhalt">
+      <div class="zeig">
+        <h2 class="titel-mittel" data-faden>Nichts dabei?</h2>
+        <p style="margin-top:.9rem; max-width:44ch">Vieles lässt sich in anderen Farben oder Größen machen. Schreib mir, was dir vorschwebt.</p>
+      </div>
+      <div class="zeig" data-versatz="120">
+        <a class="knopf knopf--dunkel" href="wunsch.html">Wunsch beschreiben</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="fuss">
+  <div class="bahn">
+    <div class="fuss__raster">
+      <div>
+        <p class="wortmarke">Connygurumi<span>.</span></p>
+        <p class="karte__meta" style="margin-top:.5rem">Handgemachtes aus Aidlingen</p>
+      </div>
+      <div>
+        <h3>Arbeiten</h3>
+        <ul>
+          <li><a href="shop.html?k=haekeln">Häkelarbeiten</a></li>
+          <li><a href="shop.html?k=gravur">Holz &amp; Gravur</a></li>
+          <li><a href="shop.html?k=basteln">Basteleien</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Werkstatt</h3>
+        <ul>
+          <li><a href="ueber.html">Über mich</a></li>
+          <li><a href="wunsch.html">Wunschanfertigung</a></li>
+          <li><a href="versand.html">Versand &amp; Zahlung</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Rechtliches</h3>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="agb.html">AGB</a></li>
+          <li><a href="widerruf.html">Widerruf</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fuss__unten">
+      <span>© <span data-jahr>2026</span> Connygurumi</span>
+      <span>Von Hand gemacht in Aidlingen.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/basis.js" defer></script>
+<script src="js/preis.js" defer></script>
+<script src="js/bild-slots.js" defer></script>
+<script src="js/shop-daten.js" defer></script>
+<script src="js/versand.js" defer></script>
+<script src="js/warenkorb.js" defer></script>
+<script src="js/warenkorb-ui.js" defer></script>
+<script src="js/produktliste.js" defer></script>
+<script src="js/faden.js" defer></script>
+</body>
+</html>

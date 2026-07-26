@@ -1,0 +1,68 @@
+{
+  "_hinweis": "Zentrale Einstellungen. Wird von der Website UND (spaeter) von der Checkout-Funktion gelesen. Nach jeder Aenderung Seite neu laden.",
+  "checkout": "anfrage",
+  "_checkout_erklaerung": "\"anfrage\" = Bestellung kommt per E-Mail, Bezahlung wird danach persoenlich geklaert. \"stripe\" = echter Bezahlvorgang. Erst auf \"stripe\" umstellen, wenn Gewerbe, AGB, Widerrufsbelehrung und Stripe-Konto stehen.",
+  "shopName": "Connygurumi",
+  "inhaberin": "Cornelia Brüll",
+  "strasse": "[STRASSE — vor Livegang eintragen]",
+  "plz": "[PLZ]",
+  "ort": "Aidlingen",
+  "email": "[E-MAIL — noch offen]",
+  "telefon": "[TELEFON — noch offen]",
+  "kleinunternehmer": true,
+  "waehrung": "EUR",
+  "lieferlaender": [
+    "DE",
+    "AT"
+  ],
+  "steuerhinweis": "Kein Ausweis von Umsatzsteuer gemäß § 19 UStG.",
+  "versand": {
+    "regel": "teuerste_klasse",
+    "versandfreiAbCent": 8000,
+    "lieferzeitTage": [
+      3,
+      5
+    ],
+    "klassen": {
+      "brief": {
+        "name": "Warensendung",
+        "DE": 190,
+        "AT": 450
+      },
+      "paket_s": {
+        "name": "DHL Paket S",
+        "DE": 550,
+        "AT": 1690
+      },
+      "paket_m": {
+        "name": "DHL Paket M",
+        "DE": 690,
+        "AT": 1890
+      },
+      "sperrig": {
+        "name": "Sperrgut",
+        "DE": 1290,
+        "AT": null
+      },
+      "abholung": {
+        "name": "Abholung vor Ort",
+        "DE": 0,
+        "AT": 0
+      }
+    }
+  },
+  "kategorien": [
+    {
+      "id": "haekeln",
+      "name": "Häkelarbeiten"
+    },
+    {
+      "id": "gravur",
+      "name": "Holz & Gravur"
+    },
+    {
+      "id": "basteln",
+      "name": "Basteleien"
+    }
+  ]
+}

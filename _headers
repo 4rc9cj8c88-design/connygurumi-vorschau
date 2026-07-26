@@ -1,0 +1,15 @@
+/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Cross-Origin-Resource-Policy: same-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=()
+
+# Hinweis: 'unsafe-inline' bei style-src ist nötig, weil im HTML style="..."-Attribute
+# stehen. Stilattribute sind kein Angriffsvektor; Skripte laufen weiterhin nur aus
+# eigenen Dateien ('self'), was der eigentliche Schutz ist.
+#
+# Sobald Stripe dazukommt, muss hier nichts geändert werden: die Weiterleitung
+# erfolgt über location.href, nicht über ein fremdes Skript.

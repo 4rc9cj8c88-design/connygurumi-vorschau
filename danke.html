@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Danke — Connygurumi</title>
+<meta name="description" content="Deine Nachricht ist angekommen.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preload" as="font" type="font/woff2" href="fonts/newsreader-var-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/karla-var-latin.woff2" crossorigin>
+<link rel="stylesheet" href="css/stil.css">
+<script src="js/js-flag.js"></script>
+</head>
+<body>
+
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+
+<header class="kopf">
+  <a class="wortmarke" href="index.html">Connygurumi<span>.</span></a>
+  <nav class="nav" id="nav">
+    <a href="index.html">Startseite</a>
+    <a href="shop.html">Arbeiten</a>
+    <a href="ueber.html">Über mich</a>
+    <a href="wunsch.html">Wunschanfertigung</a>
+  </nav>
+  <div class="kopf__rechts">
+    <button type="button" class="korb-knopf nur-mit-js" id="warenkorb-oeffnen">
+      Warenkorb <span class="korb-knopf__zahl" id="warenkorb-anzahl" hidden>0</span>
+    </button>
+    <button type="button" class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menü öffnen">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="inhalt" class="hauptteil">
+  <section class="abschnitt" style="padding-top:clamp(8rem,14vw,12rem)">
+    <div class="bahn lese">
+      <p class="marke">Angekommen</p>
+      <h1 class="titel-gross" data-faden>Danke — <em>ich melde mich</em>.</h1>
+      <div id="danke-text" style="margin-top:1.4rem">
+        <p>Deine Nachricht liegt in meinem Postfach. Ich schaue sie mir in Ruhe an und antworte meist innerhalb von zwei bis drei Tagen.</p>
+      </div>
+      <p style="margin-top:2.2rem; display:flex; gap:.7rem; flex-wrap:wrap">
+        <a class="knopf knopf--linie" href="shop.html">Weiter stöbern</a>
+        <a class="knopf knopf--linie" href="index.html">Zur Startseite</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="fuss">
+  <div class="bahn">
+    <div class="fuss__raster">
+      <div>
+        <p class="wortmarke">Connygurumi<span>.</span></p>
+        <p class="karte__meta" style="margin-top:.5rem">Handgemachtes aus Aidlingen</p>
+      </div>
+      <div>
+        <h3>Arbeiten</h3>
+        <ul>
+          <li><a href="shop.html?k=haekeln">Häkelarbeiten</a></li>
+          <li><a href="shop.html?k=gravur">Holz &amp; Gravur</a></li>
+          <li><a href="shop.html?k=basteln">Basteleien</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Werkstatt</h3>
+        <ul>
+          <li><a href="ueber.html">Über mich</a></li>
+          <li><a href="wunsch.html">Wunschanfertigung</a></li>
+          <li><a href="versand.html">Versand &amp; Zahlung</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Rechtliches</h3>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="agb.html">AGB</a></li>
+          <li><a href="widerruf.html">Widerruf</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fuss__unten">
+      <span>© <span data-jahr>2026</span> Connygurumi</span>
+      <span>Von Hand gemacht in Aidlingen.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/basis.js" defer></script>
+<script src="js/preis.js" defer></script>
+<script src="js/shop-daten.js" defer></script>
+<script src="js/versand.js" defer></script>
+<script src="js/warenkorb.js" defer></script>
+<script src="js/warenkorb-ui.js" defer></script>
+<script src="js/danke.js" defer></script>
+<script src="js/faden.js" defer></script>
+</body>
+</html>

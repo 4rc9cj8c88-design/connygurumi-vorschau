@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Versand & Zahlung — Connygurumi</title>
+<meta name="description" content="Conny fertigt in Aidlingen Häkelarbeiten, gravierte Holzstücke und kleine Basteleien — alles von Hand.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preload" as="font" type="font/woff2" href="fonts/newsreader-var-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/karla-var-latin.woff2" crossorigin>
+<link rel="stylesheet" href="css/stil.css">
+<script src="js/js-flag.js"></script>
+</head>
+<body>
+
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+
+<header class="kopf">
+  <a class="wortmarke" href="index.html">Connygurumi<span>.</span></a>
+  <nav class="nav" id="nav">
+    <a href="index.html">Startseite</a>
+    <a href="shop.html">Arbeiten</a>
+    <a href="ueber.html">Über mich</a>
+    <a href="wunsch.html">Wunschanfertigung</a>
+  </nav>
+  <div class="kopf__rechts">
+    <button type="button" class="korb-knopf nur-mit-js" id="warenkorb-oeffnen">
+      Warenkorb <span class="korb-knopf__zahl" id="warenkorb-anzahl" hidden>0</span>
+    </button>
+    <a class="korb-knopf ohne-js" href="warenkorb.html">Warenkorb</a>
+    <button type="button" class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menü öffnen">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="inhalt" class="hauptteil">
+  <section class="abschnitt" style="padding-top:clamp(7rem,12vw,10rem)">
+    <div class="bahn rechtstext">
+      <p class="marke">Gut zu wissen</p>
+      <h1 class="titel-gross" data-faden>Versand &amp; Zahlung.</h1>
+
+      <h2>Wie lange dauert es?</h2>
+      <p>Was vorrätig ist, geht innerhalb von drei bis fünf Werktagen auf die Reise. Wunschanfertigungen brauchen länger — wie lange genau, steht in meiner Antwort auf deine Anfrage.</p>
+
+      <h2>Was kostet der Versand?</h2>
+      <div id="versandtabelle"></div>
+      <p>Es wird immer nur ein Paket berechnet. Bestellst du mehrere Sachen, gilt der Satz der größten Sendung.</p>
+
+      <h2>Abholung</h2>
+      <p>Du wohnst in der Nähe? Dann kannst du deine Bestellung auch in Aidlingen abholen. Schreib das einfach ins Nachrichtenfeld, dann vereinbaren wir einen Termin — Versandkosten fallen dann keine an.</p>
+
+      <h2>Wie wird bezahlt?</h2>
+      <p>Zurzeit läuft die Bestellung als unverbindliche Anfrage: Du schickst deine Auswahl ab, ich prüfe, ob alles noch da ist, und antworte mit einer Bestätigung samt Zahlungsdaten. Erst danach ist die Bestellung verbindlich, und erst dann wird gezahlt.</p>
+      <p class="kasten"><span class="offen">Später:</span> Sobald die Bezahlung direkt über die Website eingerichtet ist, kannst du hier gleich beim Bestellen zahlen. Bis dahin bleibt es beim Weg über die Bestätigungsmail.</p>
+
+      <h2>Einzelstücke</h2>
+      <p>Vieles hier gibt es genau einmal. Sollte ein Stück zwischenzeitlich schon verkauft sein, sage ich dir sofort Bescheid — und du bekommst selbstverständlich alles zurück, was du bereits gezahlt hast.</p>
+
+      <h2>Verpackung</h2>
+      <p>Ich verpacke so sparsam wie möglich und verwende Kartons gern ein zweites Mal. Wenn etwas ein Geschenk ist, schreib es dazu — dann kommt es hübsch verpackt und ohne Preis an.</p>
+    </div>
+  </section>
+</main>
+<footer class="fuss">
+  <div class="bahn">
+    <div class="fuss__raster">
+      <div>
+        <p class="wortmarke">Connygurumi<span>.</span></p>
+        <p class="karte__meta" style="margin-top:.5rem">Handgemachtes aus Aidlingen</p>
+      </div>
+      <div>
+        <h3>Arbeiten</h3>
+        <ul>
+          <li><a href="shop.html?k=haekeln">Häkelarbeiten</a></li>
+          <li><a href="shop.html?k=gravur">Holz &amp; Gravur</a></li>
+          <li><a href="shop.html?k=basteln">Basteleien</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Werkstatt</h3>
+        <ul>
+          <li><a href="ueber.html">Über mich</a></li>
+          <li><a href="wunsch.html">Wunschanfertigung</a></li>
+          <li><a href="versand.html">Versand &amp; Zahlung</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Rechtliches</h3>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="agb.html">AGB</a></li>
+          <li><a href="widerruf.html">Widerruf</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fuss__unten">
+      <span>© <span data-jahr>2026</span> Connygurumi</span>
+      <span>Von Hand gemacht in Aidlingen.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/basis.js" defer></script>
+<script src="js/preis.js" defer></script>
+<script src="js/bild-slots.js" defer></script>
+<script src="js/shop-daten.js" defer></script>
+<script src="js/versand.js" defer></script>
+<script src="js/warenkorb.js" defer></script>
+<script src="js/warenkorb-ui.js" defer></script>
+<script src="js/versandtabelle.js" defer></script>
+<script src="js/faden.js" defer></script>
+</body>
+</html>

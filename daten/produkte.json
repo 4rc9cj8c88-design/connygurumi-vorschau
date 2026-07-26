@@ -1,0 +1,214 @@
+{
+  "schema": 1,
+
+  "_anleitung": [
+    "So legst du ein Produkt an:",
+    "1. Diesen Block kopieren, unten einfuegen, Komma zwischen den Bloecken nicht vergessen.",
+    "2. 'id' vergeben und NIE wieder aendern (hk-0001, gr-0001, ba-0001 ...).",
+    "3. Fotos nach img/produkte/ legen, genau so benannt wie unter 'bilder' angegeben.",
+    "4. Solange kein Foto da ist, zeigt die Seite automatisch einen Platzhalter. Nichts geht kaputt.",
+    "5. 'status': entwurf = unsichtbar | verfuegbar | reserviert | verkauft | auf_anfrage",
+    "6. 'preisCent': Preis in Cent. 34,00 EUR = 3400. Keine Kommazahlen."
+  ],
+
+  "produkte": [
+    {
+      "id": "hk-0001",
+      "slug": "kuscheldecke-wolke",
+      "titel": "Kuscheldecke „Wolke“",
+      "kategorie": "haekeln",
+      "preisCent": 8900,
+      "status": "verfuegbar",
+      "bestand": 1,
+      "unikat": true,
+      "varianten": [],
+      "bilder": [
+        { "src": "img/produkte/hk-0001-1.jpg", "alt": "Gehäkelte Decke in Creme, locker gefaltet" },
+        { "src": "img/produkte/hk-0001-2.jpg", "alt": "Nahaufnahme des Häkelmusters" }
+      ],
+      "kurztext": "Weiche Decke im Wellenmuster, in vielen Abenden entstanden.",
+      "langtext": [
+        "Eine Decke für den Sessel am Fenster: groß genug zum Einkuscheln, leicht genug für den Sommerabend.",
+        "Jede Reihe ist von Hand gehäkelt. Kleine Unregelmäßigkeiten gehören dazu — sie sind der Unterschied zur Maschine."
+      ],
+      "masseCm": { "breite": 130, "hoehe": 170, "tiefe": null },
+      "versandklasse": "paket_m",
+      "gewichtGramm": 900,
+      "lieferzeit": "3–5 Werktage",
+      "material": [
+        { "faser": "Baumwolle", "anteilProzent": 100 }
+      ],
+      "pflegehinweis": "Handwäsche 30 °C, liegend trocknen",
+      "warnhinweise": [],
+      "individuellGefertigt": false,
+      "erstelltAm": "2026-07-26",
+      "verkauftAm": null,
+      "reihenfolge": 10,
+      "hervorgehoben": true
+    },
+    {
+      "id": "gr-0001",
+      "slug": "holzschild-familienname",
+      "titel": "Holzschild mit Namensgravur",
+      "kategorie": "gravur",
+      "preisCent": 3200,
+      "status": "verfuegbar",
+      "bestand": 8,
+      "unikat": false,
+      "varianten": [],
+      "bilder": [
+        { "src": "img/produkte/gr-0001-1.jpg", "alt": "Holzschild mit eingraviertem Namen" }
+      ],
+      "kurztext": "Eichenschild für die Haustür, mit deinem Wunschnamen graviert.",
+      "langtext": [
+        "Massives Eichenholz, geschliffen und geölt, die Schrift mit dem Laser eingebrannt.",
+        "Den Wunschtext gibst du beim Bestellen an. Bis zu 20 Zeichen passen gut aufs Schild."
+      ],
+      "masseCm": { "breite": 30, "hoehe": 12, "tiefe": 1.8 },
+      "versandklasse": "paket_s",
+      "gewichtGramm": 400,
+      "lieferzeit": "5–8 Werktage",
+      "material": [],
+      "materialtext": "Eiche massiv, geölt",
+      "pflegehinweis": "Trocken abwischen, nicht dauerhaft der Nässe aussetzen",
+      "warnhinweise": [],
+      "individuellGefertigt": true,
+      "gravurFeld": { "aktiv": true, "beschriftung": "Wunschtext für die Gravur", "maxZeichen": 20 },
+      "erstelltAm": "2026-07-26",
+      "verkauftAm": null,
+      "reihenfolge": 20,
+      "hervorgehoben": true
+    },
+    {
+      "id": "gr-0002",
+      "slug": "brotzeitbrett-gravur",
+      "titel": "Brotzeitbrett mit Motiv",
+      "kategorie": "gravur",
+      "preisCent": 2400,
+      "status": "verfuegbar",
+      "bestand": 4,
+      "unikat": false,
+      "varianten": [],
+      "bilder": [
+        { "src": "img/produkte/gr-0002-1.jpg", "alt": "Holzbrett mit eingraviertem Blattmotiv" }
+      ],
+      "kurztext": "Buchenbrett, an der Ecke mit einem feinen Motiv graviert.",
+      "langtext": [
+        "Ein Brett, das jeden Tag benutzt wird und trotzdem schön ist.",
+        "Das Motiv sitzt am Rand, damit die Schneidefläche frei bleibt."
+      ],
+      "masseCm": { "breite": 32, "hoehe": 18, "tiefe": 1.5 },
+      "versandklasse": "paket_s",
+      "gewichtGramm": 550,
+      "lieferzeit": "3–5 Werktage",
+      "material": [],
+      "materialtext": "Buche massiv, lebensmittelecht geölt",
+      "pflegehinweis": "Von Hand spülen, nicht in die Spülmaschine",
+      "warnhinweise": [],
+      "individuellGefertigt": false,
+      "erstelltAm": "2026-07-26",
+      "verkauftAm": null,
+      "reihenfolge": 30,
+      "hervorgehoben": false
+    },
+    {
+      "id": "hk-0002",
+      "slug": "muetze-winterabend",
+      "titel": "Mütze „Winterabend“",
+      "kategorie": "haekeln",
+      "preisCent": 3400,
+      "status": "verkauft",
+      "bestand": 0,
+      "unikat": true,
+      "varianten": [],
+      "bilder": [
+        { "src": "img/produkte/hk-0002-1.jpg", "alt": "Gehäkelte Mütze in Altrosa" }
+      ],
+      "kurztext": "Warme Mütze mit breitem Bund. Einzelstück, bereits verkauft.",
+      "langtext": [
+        "Doppelt gehäkelter Bund, damit nichts zieht.",
+        "Ein ähnliches Stück fertige ich gern auf Wunsch an — Farbe und Größe nach Absprache."
+      ],
+      "masseCm": { "breite": null, "hoehe": null, "tiefe": null },
+      "versandklasse": "brief",
+      "gewichtGramm": 120,
+      "lieferzeit": "3–5 Werktage",
+      "material": [
+        { "faser": "Schurwolle", "anteilProzent": 80 },
+        { "faser": "Polyacryl", "anteilProzent": 20 }
+      ],
+      "pflegehinweis": "Handwäsche 30 °C",
+      "warnhinweise": [],
+      "individuellGefertigt": false,
+      "erstelltAm": "2026-07-26",
+      "verkauftAm": "2026-07-24",
+      "reihenfolge": 40,
+      "hervorgehoben": false
+    },
+    {
+      "id": "ba-0001",
+      "slug": "kranz-trockenblumen",
+      "titel": "Türkranz aus Trockenblumen",
+      "kategorie": "basteln",
+      "preisCent": 4200,
+      "status": "verfuegbar",
+      "bestand": 1,
+      "unikat": true,
+      "varianten": [],
+      "bilder": [
+        { "src": "img/produkte/ba-0001-1.jpg", "alt": "Kranz aus getrockneten Blumen in Rosé und Beige" }
+      ],
+      "kurztext": "Gebunden aus getrockneten Blüten in Rosé und Beige.",
+      "langtext": [
+        "Ein Kranz, der nicht welkt und das ganze Jahr hängen bleiben darf.",
+        "Weil jede Blüte anders ist, gibt es diesen Kranz genau einmal."
+      ],
+      "masseCm": { "breite": 30, "hoehe": 30, "tiefe": 8 },
+      "versandklasse": "paket_m",
+      "gewichtGramm": 350,
+      "lieferzeit": "3–5 Werktage",
+      "material": [],
+      "materialtext": "Trockenblumen auf Weidenring",
+      "pflegehinweis": "Nicht in die direkte Sonne hängen, dann bleibt die Farbe",
+      "warnhinweise": [],
+      "individuellGefertigt": false,
+      "erstelltAm": "2026-07-26",
+      "verkauftAm": null,
+      "reihenfolge": 50,
+      "hervorgehoben": true
+    },
+    {
+      "id": "hk-0003",
+      "slug": "topflappen-paar",
+      "titel": "Topflappen, zwei Stück",
+      "kategorie": "haekeln",
+      "preisCent": 1800,
+      "status": "verfuegbar",
+      "bestand": 3,
+      "unikat": false,
+      "varianten": [],
+      "bilder": [
+        { "src": "img/produkte/hk-0003-1.jpg", "alt": "Zwei gehäkelte Topflappen in Creme und Rosé" }
+      ],
+      "kurztext": "Dicht gehäkelt, dadurch wirklich hitzefest. Im Paar.",
+      "langtext": [
+        "Fest gearbeitet aus reiner Baumwolle — Kunstfaser hat in der Küche nichts verloren.",
+        "Mit Aufhänger, damit sie am Haken bleiben und nicht in der Schublade verschwinden."
+      ],
+      "masseCm": { "breite": 20, "hoehe": 20, "tiefe": null },
+      "versandklasse": "brief",
+      "gewichtGramm": 140,
+      "lieferzeit": "3–5 Werktage",
+      "material": [
+        { "faser": "Baumwolle", "anteilProzent": 100 }
+      ],
+      "pflegehinweis": "Waschmaschine 40 °C",
+      "warnhinweise": [],
+      "individuellGefertigt": false,
+      "erstelltAm": "2026-07-26",
+      "verkauftAm": null,
+      "reihenfolge": 60,
+      "hervorgehoben": false
+    }
+  ]
+}

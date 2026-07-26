@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wunschanfertigung — Connygurumi</title>
+<meta name="description" content="Eine Decke in deinen Farben, ein Schild mit eurem Namen: beschreibe deinen Wunsch und du bekommst eine ehrliche Rückmeldung.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preload" as="font" type="font/woff2" href="fonts/newsreader-var-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/karla-var-latin.woff2" crossorigin>
+<link rel="stylesheet" href="css/stil.css">
+<script src="js/js-flag.js"></script>
+</head>
+<body>
+
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+
+<header class="kopf">
+  <a class="wortmarke" href="index.html">Connygurumi<span>.</span></a>
+  <nav class="nav" id="nav">
+    <a href="index.html">Startseite</a>
+    <a href="shop.html">Arbeiten</a>
+    <a href="ueber.html">Über mich</a>
+    <a href="wunsch.html">Wunschanfertigung</a>
+  </nav>
+  <div class="kopf__rechts">
+    <button type="button" class="korb-knopf nur-mit-js" id="warenkorb-oeffnen">
+      Warenkorb <span class="korb-knopf__zahl" id="warenkorb-anzahl" hidden>0</span>
+    </button>
+    <a class="korb-knopf ohne-js" href="warenkorb.html">Warenkorb</a>
+    <button type="button" class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menü öffnen">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="inhalt" class="hauptteil">
+  <section class="abschnitt" style="padding-top:clamp(7rem,12vw,10rem)">
+    <div class="bahn zwei">
+      <div class="zeig">
+        <p class="marke">Wunschanfertigung</p>
+        <h1 class="titel-gross" data-faden>Erzähl mir, was dir <em>vorschwebt</em>.</h1>
+        <div class="lese" style="margin-top:1.4rem">
+          <p>Eine Decke in den Farben eures Schlafzimmers. Ein Holzschild zur Hochzeit. Eine Mütze in einer Größe, die es nirgends gibt. Vieles davon lässt sich machen.</p>
+          <p>Schreib einfach, worum es geht — gern mit Farbe, Größe und Termin. Du bekommst eine ehrliche Antwort samt Preis, bevor irgendetwas verbindlich wird.</p>
+        </div>
+        <p class="notiz" style="margin-top:1.8rem">Wichtig: Sonderanfertigungen brauchen Zeit. Für Geschenke gilt die Faustregel — je früher, desto entspannter.</p>
+      </div>
+
+      <div class="zeig" data-versatz="120">
+        <!-- Ohne JavaScript bedienbar: das Formular wird ganz normal abgeschickt. -->
+        <form name="wunsch" method="POST" action="danke.html?art=wunsch"
+              data-netlify="true" netlify-honeypot="firma">
+          <input type="hidden" name="form-name" value="wunsch">
+          <p hidden><label>Bitte leer lassen: <input name="firma"></label></p>
+
+          <label class="feld">
+            <span>Name</span>
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label class="feld">
+            <span>E-Mail</span>
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label class="feld">
+            <span>Worum geht es?</span>
+            <input type="text" id="stueck" name="stueck" placeholder="z. B. Decke, Holzschild, Kranz">
+          </label>
+          <label class="feld">
+            <span>Beschreib deinen Wunsch</span>
+            <textarea name="wunsch" required placeholder="Farbe, Größe, Anlass, Wunschtermin …"></textarea>
+          </label>
+          <label class="zustimmung">
+            <input type="checkbox" name="datenschutz" required>
+            <span>Ich habe die <a class="textlink" href="datenschutz.html">Datenschutzerklärung</a> gelesen und bin damit einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert werden.</span>
+          </label>
+          <button type="submit" class="knopf knopf--voll" style="margin-top:1.4rem">Anfrage senden</button>
+          <p class="karte__meta" style="margin-top:.8rem">Antwort kommt meist innerhalb von zwei bis drei Tagen.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="fuss">
+  <div class="bahn">
+    <div class="fuss__raster">
+      <div>
+        <p class="wortmarke">Connygurumi<span>.</span></p>
+        <p class="karte__meta" style="margin-top:.5rem">Handgemachtes aus Aidlingen</p>
+      </div>
+      <div>
+        <h3>Arbeiten</h3>
+        <ul>
+          <li><a href="shop.html?k=haekeln">Häkelarbeiten</a></li>
+          <li><a href="shop.html?k=gravur">Holz &amp; Gravur</a></li>
+          <li><a href="shop.html?k=basteln">Basteleien</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Werkstatt</h3>
+        <ul>
+          <li><a href="ueber.html">Über mich</a></li>
+          <li><a href="wunsch.html">Wunschanfertigung</a></li>
+          <li><a href="versand.html">Versand &amp; Zahlung</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Rechtliches</h3>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="agb.html">AGB</a></li>
+          <li><a href="widerruf.html">Widerruf</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fuss__unten">
+      <span>© <span data-jahr>2026</span> Connygurumi</span>
+      <span>Von Hand gemacht in Aidlingen.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/basis.js" defer></script>
+<script src="js/preis.js" defer></script>
+<script src="js/shop-daten.js" defer></script>
+<script src="js/versand.js" defer></script>
+<script src="js/warenkorb.js" defer></script>
+<script src="js/warenkorb-ui.js" defer></script>
+<script src="js/wunsch.js" defer></script>
+<script src="js/faden.js" defer></script>
+</body>
+</html>
