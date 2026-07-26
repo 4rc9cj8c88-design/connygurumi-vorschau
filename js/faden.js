@@ -59,9 +59,18 @@
 
     var schmal = breite < 720;
 
-    var links = schmal ? 7 : 36;
-    var rechts = schmal ? 21 : 116;
-    var schlaufe = schmal ? 5 : 11;
+    /* Der Faden läuft im freien Rand links neben dem Inhalt. Wo der beginnt,
+       wird gemessen statt geraten — sonst schneidet die Linie bei breiten
+       Fenstern in die erste Karte. */
+    var bahn = document.querySelector(".bahn");
+    var inhaltLinks = 60;
+    if (bahn) {
+      inhaltLinks = bahn.getBoundingClientRect().left +
+        parseFloat(getComputedStyle(bahn).paddingLeft || 0);
+    }
+    var rechts = Math.max(schmal ? 18 : 34, inhaltLinks - (schmal ? 10 : 26));
+    var links = Math.max(schmal ? 6 : 10, rechts - (schmal ? 14 : 74));
+    var schlaufe = schmal ? 5 : Math.min(11, (rechts - links) / 5);
 
     svg.setAttribute("width", breite);
     svg.setAttribute("height", seitenhoehe);
